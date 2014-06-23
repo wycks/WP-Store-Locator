@@ -7,6 +7,7 @@ A "nearest" store finder for WordPress. This is not an install and forget plugin
   - Uses a CPT and Taxonomy(optional)
   - Makes use of https://github.com/bjorn2404/jQuery-Store-Locator-Plugin for all the heavy lifting
   - Makes use of  https://github.com/WebDevStudios/Custom-Metaboxes-and-Fields-for-WordPress for CPT meta boxes
+  - Map output (bar, infowindow, etc) uses handbars.js and is easy to alter, see `/views`
   - See screenhost folder for what it looks like by default.
 
 
@@ -20,6 +21,8 @@ This plugin uses a hardcoded CPT called "Centers" found in `wsl-posttypes-taxono
 No shortcodes are used to cut down on loading bloat, it's better to use a page template to render output, see `wsl-scripts.php` conditionals.
 
 `/example` contains a twentytwelve page template file with the HTML markup, you can drop it in your theme and it should just work.
+
+This version required a manual button click to update the JSON file, found under the "Settings" menu
 
 Meta box validation is not included (for example lat/long fields), I don't like the meta box class and might get around to replacing it.
 

@@ -24,7 +24,7 @@ add_action( 'wp_enqueue_scripts', 'wsl_location_styles' );
 
 /**
  *  Load JS
- *  Load only on page template 'page-find-location' - change at will
+ *
  */
 function wsl_location_scripts(){
     if ( is_page_template( 'location-page.php' ) ){
@@ -39,6 +39,10 @@ function wsl_location_scripts(){
 add_action( 'wp_enqueue_scripts', 'wsl_location_scripts' );
 
 
+/**
+ *  Load JS params in footer
+ *
+ */
 function wsl_location_templatescript(){
         if ( is_page_template( 'location-page.php' ) ){ ?>
 
